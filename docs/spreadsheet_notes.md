@@ -23,22 +23,27 @@ Formulas entered in the first data row of `orders`:
  Aggregate Results
 
 Record the actual spreadsheet results for COUNT, SUM, AVERAGE, MIN and MAX of `amount`.
-
-Metric, Spreadsheet result   
+Metrics Summary
+Metric,Spreadsheet result
 total_count,63
 total_revenue,346200
-average_order_value,5495.238095
+average_order_value,5495.24
 max_order_value,15600
 min_order_value,1100
 
-Pivot Table 1 — Category by Region
-SUM of amount	region					
-category,East,North,South,West,Grand Total						
+2. Pivot Table 1 — Category by Region (category_by_region.csv)
+category,East,North,South,West,Grand Total
 Apparel,10600,19400,10000,37500,77500
 Electronics,21400,73400,28700,18800,142300
 Home,37500,26500,43800,18600,126400
-Grand Total	,69500,119300,82500,74900,346200
+Grand Total,69500,119300,82500,74900,346200
 
+3. Pivot Table 2 — Monthly Performance (monthly_performance.csv)
+order_month,SUM of amount,COUNTA of order_id
+2026-09,98300,19
+2026-10,93100,20
+2026-11,154800,24
+Grand Total,346200,63
 
  Pivot Table 2 — Monthly Performance
  order_month,SUM of amount,COUNTA of order_id	
