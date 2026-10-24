@@ -73,9 +73,23 @@ Source: `monthly_performance.csv`
 
  ## Data Validation
 
-- Missing amounts: Orders 1001, 1010 and 1064 have blank amounts. These were kept blank rather than replaced with zero because the source amounts are unknown.
-- Data types: Record how numeric columns were checked to ensure values are stored as numbers rather than text.
-- Duplicate order IDs: Record the result of checking for duplicate `order_id` values.
-- Outliers: Record the largest completed-order amount and every `order_id` that has that amount. Explain whether it appears unusual.
-- Handover decision: Document one decision that would help a colleague maintain the sheet consistently.
+Missing Amounts
+
+Orders 1001, 1010 and 1064 have missing amounts. These values were kept blank rather than replaced with zero because the actual amounts are unknown. These orders are excluded from completed-order revenue calculations if their status is not completed.
+
+Data Types
+
+Numeric columns such as quantity, amount, unit_price and revenue_calc were checked to ensure their values are numeric and can be used in calculations.
+
+Duplicate Order IDs
+
+The order_id column should contain one unique ID per order. Duplicate IDs were checked before final export.
+
+Outliers
+
+The maximum completed-order amount is 15600. Check the spreadsheet for every completed order with this amount. Confirm that the values are consistent with the product price and quantity before treating them as valid.
+
+Handover Decision
+
+Keep missing amounts blank until the correct source values are available. Do not replace unknown amounts with zero. Maintain the completed-order filter and verify that the exported data contains only completed orders.
 
