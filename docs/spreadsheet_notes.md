@@ -1,6 +1,6 @@
 
 
- Setup
+ ## Setup
 
 - Spreadsheet application: Google Sheets
 - Tabs created: `orders`, `products`, `completed_orders`
@@ -10,7 +10,7 @@
 - Sort applied before creating `completed_orders`: `amount` descending
 - Missing-key XLOOKUP test: `Mystery Item` returned `UNKNOWN_ITEM`
 
-Formulas
+## Formulas
 
 Formulas entered in the first data row of `orders`:
 
@@ -20,7 +20,7 @@ Formulas entered in the first data row of `orders`:
 - `unit_price`: Record the exact XLOOKUP formula used.
 - `revenue_calc`: Record the exact cell-reference multiplication formula used.
 
- Aggregate Results
+## Aggregate Results
 
 Record the actual spreadsheet results for COUNT, SUM, AVERAGE, MIN and MAX of `amount`.
  
@@ -63,7 +63,7 @@ Source: `monthly_performance.csv`
 
 
 
-Reconciliation
+## Reconciliation
 
 | Metric  | Spreadsheet          | Part A Q05           | Result                    |
 | ------- | -------------------- | -------------------- | ------------------------- |
@@ -71,7 +71,7 @@ Reconciliation
 | SUM     | 346200               | 346200               |  346200                   |
 | AVERAGE | 5495.238095          | 5495.238095          | 5495.238095               |
 
- Data Validation
+ ## Data Validation
 
 - Missing amounts: Orders 1001, 1010 and 1064 have blank amounts. These were kept blank rather than replaced with zero because the source amounts are unknown.
 - Data types: Record how numeric columns were checked to ensure values are stored as numbers rather than text.
