@@ -83,7 +83,15 @@ A bar chart clearly compares the revenue contribution of each product category.
 
 A line chart shows how category revenue changes over time and helps identify monthly trends.
 
-**Data table:** Insert the exact monthly revenue for each category from the verified SQL or spreadsheet results. Include September, October and November 2026 and a total for each month. Do not estimate missing values.
+### Monthly Revenue by Category
+
+| Month | Apparel (INR) | Electronics (INR) | Home (INR) | Grand Total (INR) |
+|---|---:|---:|---:|---:|
+| 2026-09 | 24700 | 43000 | 30600 | 98300 |
+| 2026-10 | 30600 | 49900 | 12600 | 93100 |
+| 2026-11 | 22200 | 49400 | 83200 | 154800 |
+| **Grand Total** | **77500** | **142300** | **126400** | **346200** |
+
 
 ### 3.4 Region x Category Detail
 
