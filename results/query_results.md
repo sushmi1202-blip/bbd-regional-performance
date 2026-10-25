@@ -1,4 +1,7 @@
-## Q01 — Query Results
+# SQL Query Results
+
+
+## Q01 — Orders with NULL amount
 
 **Rows returned:** 19
 
@@ -264,5 +267,5 @@
 | Sanjay Roy | 2026-11 | 12000 | 50900 | Above Target |
 
 
-# SQL Query Results
+
 
