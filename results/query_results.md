@@ -23,3 +23,16 @@
 | 1071 | 22 | Air Fryer | 5200 |
 | 1075 | 4 | Running Shoes | 3600 |
 | 1078 | 3 | Cotton Kurta | 1400 |
+
+
+## Q02 — Orders with Missing Amounts
+
+**Rows returned:** 3
+
+| order_id | customer_id | item |
+|---:|---:|---|
+| 1001 | 10 | Bluetooth Speaker |
+| 1010 | 19 | Wireless Earbuds |
+| 1064 | 20 | Bluetooth Speaker |
+
+
