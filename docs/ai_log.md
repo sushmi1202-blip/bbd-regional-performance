@@ -40,8 +40,8 @@ Return raw SQL only, with brief inline comments. Do not include Markdown fences 
 
 | Defect | Classification | Correct fix |
 |---|---|---|
-| The table `sales` does not exist. | Fake method/function | Use the actual `orders`, `customers`, and `reps` tables. |
-| The columns `region_name` and `total_sales` are not the actual columns in the supplied schema. | Fake method/function | Use `reps.region` and `orders.amount`. |
+| The table `sales` does not exist. | schema error | Use the actual `orders`, `customers`, and `reps` tables. |
+| The columns region_name and total_sales do not exist in the supplied schema. | schema error | Use `reps.region` and `orders.amount`. |
 | `SUM(total_sales) > 80000` is placed in `WHERE`. | Logic error | Filter completed rows in `WHERE`, then apply the aggregate threshold in `HAVING`. |
 | The assistant claims North's revenue grew by 38% month over month without evidence. | Phantom statistic | Calculate the change from the actual q11 results and compare it with the claim. |
 
@@ -64,12 +64,19 @@ The query returned exactly two rows, matching the expected result.
 
 Using the q11 results, North's revenue change from `2026-09` to `2026-10` is **-22.8%**.
 
-Percentage change formula:
+**Percentage change formula:**
 
 \[
-\frac{\text{October revenue}-\text{September revenue}}
-{\text{September revenue}}\times100
+\frac{\text{October revenue}-\text{September revenue}}{\text{September revenue}}\times100
 \]
+
+**Calculation:**
+
+\[
+\frac{41,300-53,500}{53,500}\times100=-22.8\%
+\]
+
+A negative percentage means revenue decreased. Therefore, the assistant's claim that North's revenue grew by 38% is contradicted by the data.
 
 A negative percentage means revenue decreased. Therefore, the assistant's claim that North's revenue grew by 38% is contradicted by the data.
 
@@ -99,7 +106,7 @@ Find why a VLOOKUP formula returns a not-found error even though the lookup item
 
 The original formula is:
 
-`=VLOOKUP(G2, $A$2:$C$10, 3, FALSE)`
+=VLOOKUP(TRIM(G2), products!$A$2:$C$10, 3, FALSE)
 
 Cell `G2` on the `orders` tab contains ` Smart Watch`, with a leading space before the first letter. The `products` tab occupies `A1:C10`. Row 1 contains headers, item names are in column A, and unit prices are in column C. The product `Smart Watch` exists in the table.
 
