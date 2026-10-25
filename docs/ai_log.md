@@ -104,7 +104,7 @@ Find why a VLOOKUP formula returns a not-found error even though the lookup item
 
 The original formula is:
 
-=VLOOKUP(TRIM(G2), products!$A$2:$C$10, 3, FALSE)
+=VLOOKUP(G2, products!$A$2:$C$10, 3, FALSE)
 
 Cell `G2` on the `orders` tab contains ` Smart Watch`, with a leading space before the first letter. The `products` tab occupies `A1:C10`. Row 1 contains headers, item names are in column A, and unit prices are in column C. The product `Smart Watch` exists in the table.
 
