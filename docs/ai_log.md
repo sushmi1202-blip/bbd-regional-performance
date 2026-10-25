@@ -66,17 +66,15 @@ Using the q11 results, North's revenue change from `2026-09` to `2026-10` is **-
 
 **Percentage change formula:**
 
-\[
+$$
 \frac{\text{October revenue}-\text{September revenue}}{\text{September revenue}}\times100
-\]
+$$
 
 **Calculation:**
 
-\[
+$$
 \frac{41,300-53,500}{53,500}\times100=-22.8\%
-\]
-
-A negative percentage means revenue decreased. Therefore, the assistant's claim that North's revenue grew by 38% is contradicted by the data.
+$$
 
 A negative percentage means revenue decreased. Therefore, the assistant's claim that North's revenue grew by 38% is contradicted by the data.
 
