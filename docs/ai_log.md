@@ -73,7 +73,7 @@ $$
 **Calculation:**
 
 $$
-\frac{41,300-53,500}{53,500}\times100=-22.8%
+\frac{41{,}300-53{,}500}{53{,}500}\times100\approx -22.8\%
 $$
 
 A negative percentage means revenue decreased. Therefore, the assistant's claim that North's revenue grew by 38% is contradicted by the data.
